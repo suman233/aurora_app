@@ -1,0 +1,32 @@
+.container {
+    min-height: 65vh;
+    text-align: center;
+
+    @media (max-width: 479px) {
+        min-height: initial;
+    }
+
+    .inner {
+        padding: 60px 20px;
+
+        flex-direction: column;
+        @media(max-width: 600px){
+            padding: 40px 10px;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 700;
+            @media(max-width: 600px){
+                font-size: 30px;
+            }
+        }
+
+        a {
+            font-weight: 800;
+        }
+        > div {
+            margin: 0 auto 20px;
+        }
+    }
+}
+
