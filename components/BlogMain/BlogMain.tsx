@@ -250,7 +250,7 @@ export default function BlogMain(props: blogwraprops) {
                       </Link>
                     </figure>
                     <Box className="blogdate">
-                      <Typography variant="caption">{item._id}</Typography>
+                      <Typography variant="caption">{blogdetails.map(i=>i.blogdate)}</Typography>
                     </Box>
                     <Box className="blogtxtwrap">
                       {/* <Typography
