@@ -227,7 +227,56 @@ interface relatedBlogprops{
 }
 export default function RelatedBlog(props: relatedBlogprops) {
   return (
+    
     <RelatedBlogwrap>
+        {/* singledata ? (
+    <RelatedBlogwrap>
+      <Box className="relatedBlog-wrap">
+        <Container fixed>
+          <Box className="relatedBlog-tittle">
+            <Typography variant="h2">{props.relatedtittl}</Typography>
+          </Box>
+          <Box className="related-blogslider">
+            <Slider {...sliderSettings}>
+              {singledata?.related_blogs?.map((item, index) => (
+                <Box className="singlewrapslider">
+                  <Box className="singleblogWrap">
+                    <figure>
+                      <Link href="/blog-details">
+                        <Image
+                          src={item.image}
+                          width={263}
+                          height={198}
+                          alt="blogimage"
+                        />
+                      </Link>
+                    </figure>
+                    <Box className="blogtxtwrap">
+                      <Typography variant="caption">
+                        {item.author}
+                      </Typography>
+                      <Typography variant="body1">
+                        <Link href="/blog-details">{item.title}</Link>
+                      </Typography>
+                      <Link className="blogbtnwrap" href="/blog-details">
+                        <Image
+                          src={assest.blogawrsicn}
+                          width={18}
+                          height={9}
+                          alt="bloglink-image"
+                        />
+                      </Link>
+                    </Box>
+                  </Box>
+                </Box>
+              ))}
+            </Slider>
+          </Box>
+        </Container>
+      </Box>
+    </RelatedBlogwrap>
+    ) : <Typography textAlign={'center'} variant="h2">No Related Blog Found</Typography>
+  ) */}
         <Box className="relatedBlog-wrap">
             <Container fixed>
                 <Box className="relatedBlog-tittle">
@@ -261,3 +310,4 @@ export default function RelatedBlog(props: relatedBlogprops) {
     </RelatedBlogwrap>
   )
 }
+

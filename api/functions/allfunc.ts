@@ -5,6 +5,8 @@ import { RootDemo } from "@/interface/demointerface";
 import { keyfactorInt } from "@/interface/keyfactorinter";
 import { keytabinter } from "@/interface/keyfactortabinter";
 import { ClientRoot, FeedBack } from "@/interface/client.interface";
+import { BlogsRoot } from "@/interface/blogs.interface";
+import { BlogDetailsRoot } from "@/interface/singleblog.interface";
 
 
 export const homebannerfunc=async()=>{
@@ -71,6 +73,24 @@ export const homebannerfunc=async()=>{
         endpoints.feedback
     )
     console.log('client', resp.data.data);
+    return resp.data.data;
+    
+ }
+
+ export const bloglists= async ()=>{
+    const resp = await axiosInstance.post<BlogsRoot>(
+        endpoints.blogs.allblog
+    )
+    console.log('allblogs',resp);
+    return resp.data.data;
+    
+ }
+
+ export const singleblogdata= async (id: string)=>{
+    const resp = await axiosInstance.get<BlogDetailsRoot>(
+        endpoints.blogs.singleblog(id)
+    )
+    console.log('singleblog',resp.data.data);
     return resp.data.data;
     
  }

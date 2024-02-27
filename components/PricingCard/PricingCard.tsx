@@ -116,6 +116,7 @@ interface subProps{
     isCross : boolean
 }
 export default function PricingCard(props: pricingCardProps) {
+    
     const {heading,price,options} = props;
   return (
     <PricingCardWrap className='pricing-card'>

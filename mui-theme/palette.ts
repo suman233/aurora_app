@@ -21,7 +21,7 @@ const GREY = {
   900: "#161C24"
 };
 
-const PRIMARY = {
+export const PRIMARY = {
   lighter: "#D1E9FC",
   light: "#76B0F1",
   main: themeColor?.primaryMain,

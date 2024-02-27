@@ -46,7 +46,7 @@ export default function SingleclientFdbck(props: clientfeedProps) {
                     <Typography variant='caption'>{props.clientname}</Typography>
                     <Box className="star-rating">
                         {/* <Image src={props.clientstart} width={108} height={16} alt='starticon'/> */}
-                        <Rating value={props.clientrate} precision={0.5}/>
+                        <Rating value={props.clientrate} sx={{color:'gold'}} precision={0.5}/>
                     </Box>
                 </Box>
             </Box>

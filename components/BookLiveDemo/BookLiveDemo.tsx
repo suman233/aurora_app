@@ -4,6 +4,7 @@ import { Box } from '@mui/system'
 import React from 'react'
 import CommonHeadingTittle from '../CommonHeadingTittle/CommonHeadingTittle'
 import CustomButton from '@/ui/Buttons/CustomButton'
+import { PRIMARY } from '@/themes/palette'
 
 const BookLiveDemoWrap = styled(Box)`
     background-color: var(--colorF68939);
@@ -40,7 +41,8 @@ export default function BookLiveDemo() {
             </Box>
             <Box className="btn-holder">
             <CustomButton type="button">
-                <Typography variant="caption">Book A Demo</Typography>
+                {/* sx={{color:`${PRIMARY.dark}`, backgroundColor:`${PRIMARY.dark}`}} */}
+                <Typography variant="caption" >Book A Demo</Typography>
             </CustomButton>
             </Box>
         </Container>

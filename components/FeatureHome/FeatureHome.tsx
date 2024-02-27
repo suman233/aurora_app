@@ -6,6 +6,7 @@ import { Typography } from '@mui/material'
 import Image from 'next/image'
 import { homebannerfunc } from '@/api/functions/allfunc'
 import { useQuery } from 'react-query'
+import { mediaUrl } from '@/api/endpoints'
 const FeatureWrap = styled(Box)`
 .common-gap{
     padding: 80px 0;
@@ -420,6 +421,7 @@ export default function FeatureHome() {
                                     <Typography variant='h3'>{bannerHome?.section_4_title_2}</Typography>
                                     <Typography variant='body1'>{bannerHome?.section_4_text_2}</Typography>
                                 </Box>
+                                {/* src={mediaUrl(`uploads/home_content/${bannerHome?.section_4_icon_2} */}
 
                                 <Box className="single-wraptxtLft">
                                     <i><Image src={`https://aurora.dedicateddevelopers.us/uploads/home_content/${bannerHome?.section_4_icon_3 as string}`} width={26} height={26} alt='icon' /></i>

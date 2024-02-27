@@ -28,9 +28,11 @@ export const endpoints = {
     keyfactorIdend:(id:string)=>`/home-tab/content/list/${id}`
 
 },
-feedback: '/feedback/list'
-
-
+feedback: '/feedback/list',
+  blogs: {
+    allblog: '/blog/list',
+    singleblog: (id?:string)=> `/blog/details/${id}`
+  }
 };
 
 export const sucessNotificationEndPoints = [
