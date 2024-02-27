@@ -223,7 +223,9 @@ export default function BlogMain(props: blogwraprops) {
     queryKey: ["allblogs"],
     queryFn: bloglists,
   });
-  const date=blogdetails.map(i=>i.blogdate[0])
+  const date=blogdetails.map(i=>i.blogdate)
+  console.log('sing',date);
+  
   return (
     <BlogmainWraper>
       <Box className="main-blogWrap">
@@ -251,7 +253,7 @@ export default function BlogMain(props: blogwraprops) {
                       </Link>
                     </figure>
                     <Box className="blogdate">
-                      <Typography variant="caption">{date}</Typography>
+                      <Typography variant="caption">20 Jul, 2023</Typography>
                     </Box>
                     <Box className="blogtxtwrap">
                       {/* <Typography
